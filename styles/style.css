@@ -1,7 +1,10 @@
 
 
-html,
-body {
+* {
+	box-sizing: border-box;
+}
+
+html, body {
 	font-family: Arial, Helvetica, sans-serif;
 	margin: 0;
 	padding: 0;
@@ -9,59 +12,105 @@ body {
 }
 
 header {
-	margin-top: 3em;
-	background-color: #cc2a36;
-	height: 10em;
+	margin-top: 0;
+	background-color: #252525;
+	height: 7em;
 }
 
 h1 {
 	text-align: center;
-	padding-top: 2em
+	color: #af0404;
+	margin: 0;
+	padding-top: 1.2em;
 }
 
+/* Responsive navbar */
 nav {
-	overflow: hidden;
-	background-color: #262626;
-	position: fixed;
-	top: 0;
-	width: 100%;
+	background-color: #434343;
+	font-weight: bold;
 }
 
-nav img {
-	width: 3.2em;
-	height: 4em;
-	margin-left: 1em;
-	margin-top: 0.4em;
+nav ul {
+	margin-top: 0;
+	padding: 0.6em;
+	display: flex;
+	justify-content: right;
+	list-style: none;
 }
 
-nav a {
-	float: right;
-	display: block;
-	color: #efefef;
-	text-align: left;
-	padding: 1em 1em;
+nav ul li {
+	padding: 0.7em 1.5em;
+}
+
+nav ul li a {
 	text-decoration: none;
-	font-size: 1.3em;
+	font-size: 1.1em;
+	color: #ffffff;
 }
 
-nav a:hover {
-	text-decoration: underline #2ab7ca 0.15em;
+nav ul li:hover {
+	background-color: #8d0000;
+	transition: 0.9s;
 }
 
-main {
-	margin: 1em;
-	padding: 1em;
+@media only screen and (max-width: 767px) {
+	nav ul {
+		justify-content: center;
+		height: 14em;
+		flex-direction: column;
+		text-align: center;
+	}
 }
 
-main img {
-	max-width: 100%;
-	max-height: 100%;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+/* Responsive cards */
+.column {
+	float: left;
+	width: 25%;
+	padding: 0 2em;
 }
 
+.row {
+	margin: 0 -5px;
+}
+
+.row:after {
+	display: table;
+	clear: both;
+}
+
+@media screen and (max-width: 550px) {
+	.column {
+		width: 100%;
+		display: inline;
+		margin-bottom: 1.25em;
+	}
+}
+
+@media (min-width:550px) and (max-width:1024px) {
+	.column {
+		width: 50%;
+		display: inline;
+		margin-bottom: 20px;
+	}
+}
+
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	padding: 16px;
+	text-align: center;
+	background-color: #ff0000;
+}
+
+.card img {
+	width: 7.5em;
+	height: 5em;
+	margin: 0;
+	padding: 0;
+}
+
+/* Footer */
 footer {
+	clear: both;
 	background-color: #424242;
 	color: #ffffff;
 	height: 10em;
@@ -85,6 +134,7 @@ footer .footer-copyright {
 	width: 100%;
 	left: 0;
 	padding-top: 1em;
+	padding-bottom: 2em;
 }
 
 footer a {
@@ -101,4 +151,3 @@ footer img {
 .page-wrapper {
 	min-height: 100%;
 }
-
