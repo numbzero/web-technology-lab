@@ -1,14 +1,14 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 	<head>
 		<!-- Encoding -->
 		<meta charset="utf-8">
 		<!-- Control layout on mobile browsers -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 		<!-- Title  -->
 		<title>lab. nr. 1</title>
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 		<!-- Link styles -->
 		<link rel="stylesheet" href="styles/style.css">
 		<!-- Favicon -->
@@ -17,41 +17,59 @@
 	<body>
 		<div class="page-wrapper">
 			<header>
-				<h1>LABORATOR NR.2</h1>
+				<h1 class="text-center font-weight-bold">LABORATOR NR.2</h1>
 			</header>
-			<nav>
-				<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="#about">About</a></li>
-				<li><a href="#blog">Blog</a></li>
-				<li><a href="#projects">Projects</a></li>
-				<li><a href="#contacts">Contacts</a></li>
-				</li>
+			<nav class="navbar navbar-expand-md navbar-dark justify-content-center justify-content-md-end font-weight-bold">
+				<ul class="navbar-nav text-center">
+					<li class="nav-item active mr-md-4">
+						<a class="nav-link" href="index.html">Home</a>
+					</li>
+					<li class="nav-item active mr-md-4">
+						<a class="nav-link" href="#about">About</a>
+					</li>
+					<li class="nav-item active mr-md-4">
+						<a class="nav-link" href="#blog">Blog</a>
+					</li>
+					<li class="nav-item active mr-md-4">
+						<a class="nav-link" href="#projects">Projects</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="#contacts">Contacts</a>
+					</li>
+				</ul>
 			</nav>
 			<main>
-				<div class="row">
-					<div class="column">
-						<div class="card">
-							<img src="images/test_1.png">
-							<p>test_1</p>
+				<div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4">
+					<div class="col mb-4">
+						<div class="card bg-danger h-100">
+							<img src="images/test_1.png" class="card-img-top" alt="...">
+							<div class="card-body">
+								<p class="card-text">test_1</p>
+							</div>
 						</div>
 					</div>
-					<div class="column">
-						<div class="card">
-							<img src="images/test_2.png">
-							<p>test_2</p>
+					<div class="col mb-4">
+						<div class="card bg-danger h-100">
+							<img src="images/test_2.png" class="card-img-top" alt="...">
+							<div class="card-body">
+								<p class="card-text">test_2</p>
+							</div>
 						</div>
 					</div>
-					<div class="column">
-						<div class="card">
-							<img src="images/test_3.png">
-							<p>test_3</p>
+					<div class="col mb-4">
+						<div class="card bg-danger h-100">
+							<img src="images/test_3.png" class="card-img-top" alt="...">
+							<div class="card-body">
+								<p class="card-text">test_3</p>
+							</div>
 						</div>
 					</div>
-					<div class="column">
-						<div class="card">
-							<img src="images/test_4.png">
-							<p>test_4</p>
+					<div class="col mb-4">
+						<div class="card bg-danger h-100">
+							<img src="images/test_4.png" class="card-img-top" alt="...">
+							<div class="card-body">
+								<p class="card-text">test_4</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -60,16 +78,16 @@
 		<footer>
 			<div class="footer-content">
 				<a href="https://www.facebook.com">
-					<img src="images/facebook_c.png">
+				<img src="images/facebook_c.png">
 				</a>
 				<a href="https://www.github.com">
-					<img src="images/github_c.png">
+				<img src="images/github_c.png">
 				</a>
 				<a href="https://www.twitter.com">
-					<img src="images/twitter_c.png">
+				<img src="images/twitter_c.png">
 				</a>
 				<a href="https://www.google.com">
-					<img src="images/google_c.png">
+				<img src="images/google_c.png">
 				</a>
 			</div>
 			<div class="footer-copyright">
@@ -78,4 +96,3 @@
 		</footer>
 	</body>
 </html>
-
